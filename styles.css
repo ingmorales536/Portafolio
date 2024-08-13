@@ -251,36 +251,6 @@ main {
 
 
 
-/* Estilos para pantallas de 765px o menos */
-@media (max-width: 765px) {
-    main {
-        flex-direction: column; /* Pone los elementos en una columna */
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    section {
-        width: 100%; /* Asegura que cada sección ocupe todo el ancho disponible */
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .container-perfil,
-    .container-country,
-    .container-habilidades,
-    .container-tecnologi,
-    .container-me,
-    .container-image-japan {
-        margin: 0 auto 20px auto; /* Centra y agrega un margen inferior a cada contenedor */
-        width: 90%; /* Ajusta el ancho al 90% */
-    }
-
-    .technology-item img {
-        width: 55px;
-    }
-}
-
-
 /*Diseño de img proyectos*/
 .carousel {
     position: relative;
@@ -443,4 +413,104 @@ main {
     color: white;   
     margin-top: 50px;
     height: 50px;
+}
+.footer p {
+    margin-left: 40%;
+}
+
+
+
+@media(max-width: 1400px) {
+   
+
+
+    main { 
+        margin-left: 100px;
+    }
+
+    .container-perfil,
+    .container-country,
+    .container-habilidades,
+    .container-tecnologi,
+    .container-me,
+    .container-image-japan {
+       max-width: 700px;
+    }
+
+    .container-perfil {
+        margin-left: 3px;
+    }
+    .container-me{
+        margin-left: 3px;
+        max-width:300px ;
+    }
+    .container-image-japan {
+        margin-left: 3px;
+    }
+    .container-tecnologi {
+        max-width: 310px;
+    }
+}
+
+
+@media(max-width:1200px) {
+    main {
+        margin-left: 0px;
+       min-width: 100%;
+    }
+
+    .container-habilidades {
+       max-width: 233px;
+       margin-left: 66px;
+    }
+    .container-tecnologi {
+        margin-left: 120px;
+    }
+
+    .container-country {
+        max-width: 230px;
+    }
+    .container-me {
+        max-width: 2450px;
+        
+    }
+    .container-me h2 {
+        max-height: 30px;
+        
+    }
+}
+
+
+
+
+
+
+
+/* Estilos para pantallas de 765px o menos */
+@media (max-width: 765px) {
+    main {
+        flex-direction: column; /* Pone los elementos en una columna */
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    section {
+        width: 100%; /* Asegura que cada sección ocupe todo el ancho disponible */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-perfil,
+    .container-country,
+    .container-habilidades,
+    .container-tecnologi,
+    .container-me,
+    .container-image-japan {
+        margin: 0 auto 20px auto; /* Centra y agrega un margen inferior a cada contenedor */
+        max-width: 350px;
+    }
+
+    .technology-item img {
+        width: 55px;
+    }
 }
