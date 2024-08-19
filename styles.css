@@ -3,8 +3,47 @@ body {
     background-color: #0e0e0e;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: white;
 }
+
+
+
+/*top-bar */
+.top-bar {
+    background-color: #ffffff31; 
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Items-Navegacion-topbar{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+    margin-left: 43%;
+}
+
+.Items-Navegacion-topbar li {
+    padding: 18px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: white;
+}
+.top-bar a:hover {
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* FIN DEL top-bar */
 
 
 
@@ -17,9 +56,11 @@ body {
     margin-left: 320px;
     margin-top: 100px;
     border-radius: 10px;
+    color: #ffffff;
 }
 .container-perfil h1 {
     margin-left: 12px;
+    font-size: 30px;
 }
 
 .container-perfil p {
@@ -32,8 +73,6 @@ body {
     height: auto;
     object-fit: cover;
 }
-
-
 
 
 /* Estilos para los elementos de la navegación */
@@ -51,8 +90,8 @@ body {
 }
 
 .Items-Navegacion li:hover {
-    background-color: rgb(165, 48, 130);
-    border-radius: 10px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 18px;
 }
 
 @media(max-width: 760px) {
@@ -180,6 +219,7 @@ body {
     height: 500px;
     margin-top: -95px;
     border-radius: 10px;
+    color: white;
 }
 
 
@@ -241,171 +281,9 @@ body {
 
 
 
-/* main */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin-left: 60PX;
-}
 
 
 
-/*Diseño de img proyectos*/
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1050px;
-    max-height: 700px;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 40px;
-
-}
-.carousel h1 {
-    margin-left: 45%;
-    font-size: 30px;
-    background: linear-gradient(to right, #ff0281, #8d1af8);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    height: 80px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-
-.code-java-puntoventa a{
-    color: #ff3198;
-    font-size: 23px;
-    text-decoration: none;
-}
-
-.code-java-puntoventa a:hover{
- color: white;
-}
-
-
-@media (max-width:765px) {
-    .carousel {
-        max-width: 1150px;
-        max-height: 700px;
-        margin: 0;
-    }
-
-    .carousel-control {
-        height: 70px;
-        margin-top: 30px;
-    }
-    .carousel h1 {
-        margin-left: 30%;
-    }
-    .carousel h3 {
-        font-size: 20px;
-    }
- 
-}
-
-
-/* Modal para ver imágenes en grande */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-}
-
-/* Contenido del modal */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 1700px;
-}
-
-/* Botón de cierre del modal */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Botones de navegación */
-.prev-modal, .next-modal{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    height: 80px;
-    background-color: white;
-    height: 25px;
-}
-.prev-modal {
-    left: 10px;
-}
-
-.next-modal {
-    right: 10px;
-}
-
-/*fin Diseño de img proyectos*/
 
 
 .footer {
@@ -418,6 +296,14 @@ main {
     margin-left: 40%;
 }
 
+/* main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-left: 60PX;
+    margin-top: 50px;
+}
 
 
 @media(max-width: 1400px) {
@@ -450,13 +336,14 @@ main {
     .container-tecnologi {
         max-width: 310px;
     }
+   
 }
 
 
 @media(max-width:1200px) {
     main {
         margin-left: 0px;
-       min-width: 100%;
+        min-width: 100%;
     }
 
     .container-habilidades {
@@ -478,6 +365,35 @@ main {
         max-height: 30px;
         
     }
+    
+}
+
+@media(max-width:1000px) {
+   
+
+    .container-perfil {
+        max-width:663px;
+    }
+    .container-habilidades {
+       max-width: 233px;
+       margin-left: 6px;
+    }
+    .container-tecnologi {
+        margin-left: 10px;
+    }
+
+    .container-country {
+        max-width: 230px;
+    }
+    .container-me {
+       max-width: 300px;
+        
+    }
+    .container-me h2 {
+        max-height: 30px;
+        
+    }
+    
 }
 
 
@@ -512,5 +428,10 @@ main {
 
     .technology-item img {
         width: 55px;
+    }
+
+
+    .code-java-puntoventa img {
+        margin-left: 0px;
     }
 }
